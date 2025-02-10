@@ -7,7 +7,7 @@
 # Want to help us make this template better? Share your feedback here: https://forms.gle/ybq9Krt8jtBL3iCk7
 
 ARG PYTHON_VERSION=3.13.0
-FROM python:${PYTHON_VERSION}-slim as base
+FROM python:${PYTHON_VERSION}-slim AS base
 
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -51,4 +51,4 @@ COPY . .
 EXPOSE 2568
 
 # Run the application.
-CMD python scb_statement_converter/app.py
+CMD ["python", "scb_statement_converter/app.py"]
