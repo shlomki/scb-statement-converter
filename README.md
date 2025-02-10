@@ -12,6 +12,8 @@ SCB Statement Converter is a tool to convert bank statements from SCB Bank in Th
 
 ## Screenshot
 
+![Web UI](https://github.com/shlomki/scb-statement-converter/blob/main/screenshots/webui.png?raw=true)
+
 ## Installation and Usage Instructions
 
 ### Option 1: Using Docker / Docker Compose
