@@ -1,7 +1,0 @@
-services:
-  server:
-    build:
-      context: .
-    ports:
-      - 2568:2568
-
