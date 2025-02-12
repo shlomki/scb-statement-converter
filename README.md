@@ -10,14 +10,14 @@ SCB Statement Converter is a tool to convert PDF bank statements from SCB Bank i
 ## Features
 
 - Converts SCB bank statements (PDF) into CSV format.
-- Performs the conversion right in your browser or on your machine, your data stays safe as it doesn't get uploaded anywhere.
+- **Performs the conversion right in your browser or on your machine**, your data stays safe as it doesn't get uploaded anywhere.
 - Supports batch processing of multiple PDF files (by running the python script on your machine).
 
 ## Screenshot
 
 ![Web UI](https://github.com/shlomki/scb-statement-converter/blob/main/screenshots/webui.png?raw=true)
 
-## Installation and Usage Instructions
+## Usage Instructions
 
 ### Option 1: Use the Web UI
 
