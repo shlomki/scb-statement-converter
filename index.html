@@ -16,13 +16,16 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100vh;
+            padding: 20px; /* Add padding for smaller screens */
+            box-sizing: border-box;
         }
 
         h1 {
             color: #543186;
             text-align: center; /* Center horizontally */
             margin-bottom: 20px; /* Add spacing below the title */
+            font-size: 1.8rem; /* Adjust font size for mobile */
         }
 
         form {
@@ -34,12 +37,14 @@
             width: 100%;
             max-width: 400px;
             text-align: center; /* Center content inside the form */
+            margin: 0 auto; /* Center the form horizontally */
         }
 
         label {
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
+            font-size: 1rem; /* Adjust font size for readability */
         }
 
         input[type="file"],
@@ -50,7 +55,7 @@
             margin-bottom: 15px;
             border: 1px solid #ddd;
             border-radius: 4px;
-            font-size: 14px;
+            font-size: 1rem; /* Adjust font size for mobile */
             box-sizing: border-box; /* Ensures padding doesn't overflow */
         }
 
@@ -81,6 +86,7 @@
             text-decoration: none;
             color: #543186;
             font-weight: bold;
+            font-size: 1rem; /* Adjust font size for mobile */
         }
 
         #downloadLink:hover {
@@ -100,6 +106,30 @@
             color: #777; /* Gray font for disclaimer */
             text-align: center;
             max-width: 400px;
+            line-height: 1.5; /* Improve readability */
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem; /* Smaller font size for small screens */
+            }
+
+            form {
+                padding: 15px; /* Reduce padding for smaller screens */
+                margin: 0 15px; /* Add space on the left and right sides */
+            }
+
+            input[type="file"],
+            input[type="password"],
+            button {
+                font-size: 0.9rem; /* Slightly smaller font size */
+                padding: 8px; /* Reduce padding for inputs */
+            }
+
+            .disclaimer {
+                font-size: 11px; /* Smaller font size for disclaimer */
+            }
         }
     </style>
 </head>
@@ -120,6 +150,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-    <script src="convert.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
