@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCB Statement Converter</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #543186;
+            text-align: center; /* Center horizontally */
+            margin-bottom: 20px; /* Add spacing below the title */
+        }
+
+        form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center; /* Center content inside the form */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="file"],
+        input[type="password"],
+        button {
+            width: 100%; /* Full width */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box; /* Ensures padding doesn't overflow */
+        }
+
+        input[type="file"]:focus,
+        input[type="password"]:focus,
+        button:focus {
+            outline: none;
+            border-color: #543186;
+            box-shadow: 0 0 4px rgba(84, 49, 134, 0.5);
+        }
+
+        button {
+            background-color: #543186;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #6a3ca3;
+        }
+
+        #downloadLink {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #543186;
+            font-weight: bold;
+        }
+
+        #downloadLink:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            color: #d9534f;
+            font-size: 14px;
+            margin-bottom: 15px;
+            display: none; /* Hidden by default */
+        }
+
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777; /* Gray font for disclaimer */
+            text-align: center;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SCB Statement Converter</h1>
+    <form id="pdfForm">
+        <label for="pdfFile">Upload PDF:</label>
+        <input type="file" id="pdfFile" accept=".pdf" required>
+        <label for="password">Password (if required):</label>
+        <input type="password" id="password">
+        <div id="errorMessage" class="error-message"></div>
+        <button type="submit">Convert to CSV</button>
+    </form>
+    <a id="downloadLink" style="display: none;">Download CSV</a>
+    <div class="disclaimer">
+        This tool is not affiliated, endorsed, or supported by SCB in any way, shape, or form. Use it at your own risk!<br>
+        Your data is safe as it does not get uploaded to any server; all processing is done locally on your device.
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
