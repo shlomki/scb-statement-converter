@@ -2,6 +2,8 @@
 
 SCB Statement Converter is a tool to convert PDF bank statements from SCB Bank in Thailand to CSV format. The CSV files can then be imported into Excel or Google Sheets for better bookkeeping and tracking of your spending.
 
+[Click here to go to the converter](https://shlomki.github.io/scb-statement-converter/)
+
 ## Disclaimer
 
 1. This tool is not affiliated, endorsed, or supported by SCB in any way, shape, or form. Use it at your own risk!
@@ -23,7 +25,7 @@ SCB Statement Converter is a tool to convert PDF bank statements from SCB Bank i
 
 #### Steps
 
-1. Click [here](https://shlomki.github.io/scb-statement-converter/)
+1. Click [here](https://shlomki.github.io/scb-statement-converter/).
 2. Choose your bank statement PDF file from SCB.
 3. Enter the password for the PDF file.
 4. Click "Convert to CSV".
