@@ -15,7 +15,7 @@ SCB Statement Converter is a tool to convert PDF bank statements from SCB Bank i
 
 ## Screenshot
 
-![Web UI](https://github.com/shlomki/scb-statement-converter/blob/main/screenshots/webui.png?raw=true)
+<img src="https://github.com/shlomki/scb-statement-converter/blob/main/screenshots/webui.png?raw=true" alt="Web UI" width="720"/>
 
 ## Usage Instructions
 
