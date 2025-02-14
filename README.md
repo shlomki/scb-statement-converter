@@ -7,7 +7,8 @@ SCB Statement Converter is a tool to convert PDF bank statements from SCB Bank i
 ## Disclaimer
 
 1. This tool is not affiliated, endorsed, or supported by SCB in any way, shape, or form. Use it at your own risk!
-5. If SCB changes the format of their PDF statements, this tool will very likely stop working immediately.
+2. If SCB changes the format of their PDF statements, this tool will very likely stop working immediately.
+3. Please note, converted files are not encrypted.
 
 ## Features
 
