@@ -119,7 +119,7 @@ function processTextToCSV(inputText) {
     }
     
     if (csvRows.length > 0) {
-        csvRows.join("\n") + "\n";
+        return csvRows.join("\n") + "\n";
     } else {
         return "";
     }
